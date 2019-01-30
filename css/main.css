@@ -2,29 +2,33 @@
 
 body {
   font-family: 'Open Sans Condensed', sans-serif;
-  background-color: #cfd6dc;
+  margin: 0 auto;
 }
 
 #about {
     height: 400px;
 }
 
-#work, #contact {
+#work {
     height: 600px;
+}
+
+#contact {
+    height: 500px;
 }
 
 /***** GRID *****/
 
 .full-width {
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
 }
 .half-width {
-    width: 600px;
+    width: 50%;
     float: left;
 }
 .third-width {
-    width: 400px;
+    width: 33%;
     float: left;
 }
 
@@ -34,7 +38,7 @@ header {
     height: 600px;
     background: url('../img/header-image.png');
     background-size: cover;
-    margin: -50px -20px 0px -20px;
+    margin: -50px 0px 0px -20px;
 }
 
 nav {
@@ -75,6 +79,7 @@ header h1 span {
 
 #about .full-width {
     padding: 30px 0;
+    background-color: #cfd6dc;
     text-align: center;
 }
 
@@ -84,9 +89,91 @@ header h1 span {
 }
 
 #about p {
-    font-size: 21px;
+    font-size: 20px;
     color: #7f7f7f;
     line-height: 40px;
     padding-left: 200px;
     padding-right: 200px;
+}
+
+/***** WORK *****/
+
+#work {
+  background-color: #f9c7ae;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#work .full-width {
+    padding: 50px 0;
+}
+
+#work img {
+    padding-bottom: 30px;
+}
+
+#work h2 {
+    font-size: 40px;
+    line-height: 32px;
+    width: 190px;
+    margin: 0 auto;
+}
+
+#work h3 {
+    font-size: 25px;
+    line-height: 30px;
+    padding: 0 50px;
+    font-weight: lighter;
+}
+
+/***** CONTACT *****/
+
+#contact {
+    background-color: #cfd6dc;
+}
+#contact .full-width {
+    padding: 110px 0;
+}
+#contact img#contact-img {
+    margin-left: 25px;
+    border: 10px solid #ffffff;
+}
+#contact h2, #contact #email-header, #contact #socialmedia-header, #contact ul {
+    padding-left: 115px;
+}
+#contact #envelope {
+    padding: 0 10px 0 115px;
+}
+#contact h2 {
+    font-size: 36px;
+    line-height: 44px;
+}
+#contact #email-header{
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 44px;
+    margin: -30px 0 5px 0;
+}
+#contact #socialmedia-header {
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 44px;
+    margin: 40px 0 0 0;
+}
+#contact a {
+    text-align: center;
+    text-decoration: none;
+    color: #cc6666;
+    font-weight: bold;
+    font-size: 28px;
+}
+#contact ul {
+    list-style: none;
+}
+#contact ul li {
+     display: inline-block;
+}
+#contact ul img {
+    font-size: 32px;
+    padding-right: 48px;
 }
